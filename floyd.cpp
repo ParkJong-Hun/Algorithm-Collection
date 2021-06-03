@@ -29,6 +29,8 @@ void floydWarshall() {
         for(int i = 0; i < number; i++) {
             //j = 도착 노드
             for(int j = 0; j < number; j++) {
+                //출발노드에서 k를 거쳐서 도착노드로 가는 길이가 원래 출발노드에서 도착노드
+                //로 가는 길이보다 작을 경우, 간선 길이를 갱신
                 if(d[i][k] + d[k][j] < d[i][j]) {
                     d[i][j] = d[i][k] + d[k][j];
                 }

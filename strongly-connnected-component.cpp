@@ -31,13 +31,13 @@ int dfs(int x) {
     if(parent == d[x]) {
         vector<int> scc;//scc를 만듦.
         while(1) {
-            int t = s.top();//
-            s.pop();
-            scc.push_back(t);
-            finished[t] = true;
-            if(t == x) break;
+            int t = s.top();//스택의 가장 위 값을 t에 넣음
+            s.pop();//스택의 위 값을 없앰
+            scc.push_back(t);//t를 scc에 넣음
+            finished[t] = true;//처리 완료
+            if(t == x) break;//t와 부모 노드의 값이 같으면 종료
         }
-        SCC.push_back(scc);
+        SCC.push_back(scc);//SCC 집합에 scc를 넣음
     }
     //자신의 부모값 반환
     return parent;
