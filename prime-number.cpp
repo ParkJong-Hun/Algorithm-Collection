@@ -1,3 +1,4 @@
+//소수 판별
 #include <iostream>
 
 using namespace std;

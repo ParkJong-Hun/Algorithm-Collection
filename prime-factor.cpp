@@ -1,3 +1,4 @@
+//소인수 분헤
 #include <iostream>
 
 using namespace std;
