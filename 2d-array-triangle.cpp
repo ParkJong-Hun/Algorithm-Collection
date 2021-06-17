@@ -1,33 +1,33 @@
-//2차원 배열 기본형
+//2차원 배열로 직각 삼각형 만들기
 #include <iostream>
 
 using namespace std;
 //배열
 int arr[5][5];
-//각 인덱스에 들어갈 값
+//증가하는 값
 int cnt = 1;
 //함수
-void TwoDArray() {
+void CreateTriangle() {
     //행
     for(int i = 0; i < 5; i++) {
         //열
-        for(int j = 0; j < 5; j++) {
+        for(int j = 0; j <= i; j++) {
             //값을 넣음
             arr[i][j] = cnt;
-            //값을 1 증가
+            //값을 증가
             cnt++;
         }
     }
+    //결과 출력
     for(int i = 0; i < 5; i++) {
-        for(int j = 0; j < 5; j++) {
+        for(int j = 0; j <= i; j++) {
             cout << arr[i][j] << "\t";
         }
         cout << "\n";
     }
-    return;
 }
 
 int main(void) {
-    TwoDArray();
+    CreateTriangle();
     return 0;
 }
