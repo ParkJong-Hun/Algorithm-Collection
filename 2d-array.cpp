@@ -18,10 +18,13 @@ void TwoDArray() {
             cnt++;
         }
     }
+    //결과 출력
     for(int i = 0; i < 5; i++) {
+        //각 행의 값들을 모두 출력
         for(int j = 0; j < 5; j++) {
             cout << arr[i][j] << "\t";
         }
+        //행의 값이 모두 출력되면 줄바꿈
         cout << "\n";
     }
     return;
