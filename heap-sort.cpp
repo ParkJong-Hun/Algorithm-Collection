@@ -22,7 +22,7 @@ void heapify(int arr[], int here, int size) {
         heapify(arr, max, size);
     }
 }
- 
+//힙(정렬된 이진 트리) 만들기
 void buildHeap(int arr[], int size) {
     int i,j;
     for (i = size / 2 - 1; i >= 0; i--) {
@@ -32,7 +32,7 @@ void buildHeap(int arr[], int size) {
         cout << "\n";
     }
 }
- 
+//힙 정렬
 void heapSort(int arr[],int size) {
     int treeSize;
     buildHeap(arr, size);
