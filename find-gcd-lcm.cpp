@@ -3,7 +3,7 @@
 #include <iostream>
 
 using namespace std;
-
+//최대공약수
 int gcd(int a, int b) {
     //b가 0이될 때까지
     while(b != 0) {
@@ -17,6 +17,7 @@ int gcd(int a, int b) {
     //b가 0일 때 a의 값은 최대공약수
     return a;
 }
+//최소공배수
 int lcm(int a, int b) {
     //a x b 값에 최대공약수를 나눈 값은 최소공배수.
     return a * b / gcd(a, b);

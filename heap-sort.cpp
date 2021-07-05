@@ -8,6 +8,7 @@ void swap(int *a, int *b) {
     *a = *b;
     *b = temp;
 }
+//값을 비교해서 작은 값이 왼쪽에 오게 하기
 void heapify(int arr[], int here, int size) {
     int left = here * 2 + 1;
     int right = here * 2 + 2;
