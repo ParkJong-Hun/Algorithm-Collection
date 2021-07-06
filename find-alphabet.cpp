@@ -15,7 +15,7 @@ void FindAlphabet() {
         s_count[i] = -1;
     }
     //문자열 입력
-    gets(s);
+    fgets(s, 100, stdin);
     for(int i = 0; i < 100; i++) {
         if(s[i] < 97 || s[i] > 116) continue;
         //아스키 코드에서 a가 97이므로 s_count는 a의 위치
