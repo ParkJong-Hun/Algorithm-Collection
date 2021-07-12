@@ -1,6 +1,5 @@
 //문자열 반복
 #include <stdio.h>
-#include <string.h>
 
 using namespace std;
 
@@ -33,7 +32,7 @@ void StringRepeat() {
                 printf("%c", s[i][j]);
             }
         }
-        printf("\n");
+        if(t > 1) printf("\n");
     }
 }
 
